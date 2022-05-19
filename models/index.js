@@ -1,5 +1,6 @@
 const Post = require('./Post');
 const User = require('./User');
+const Comment = require('./Comment');
 
 //associations --> user has many posts
 User.hasMany(Post, {
@@ -10,4 +11,4 @@ Post.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Post };
+module.exports = { User, Post, Comment };
