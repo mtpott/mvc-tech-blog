@@ -3,8 +3,7 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 
 const exphbs = require('express-handlebars');
-// const helpers = require('./utils/helpers');
-// const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({});
 
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -21,7 +20,7 @@ const sess = {
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// app.engine('handlebars', hbs.engine);
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(session(sess));
@@ -34,6 +33,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 //connection to database and server
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('now listening'));
 });

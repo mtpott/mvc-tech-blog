@@ -64,7 +64,14 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
-module.exports = router;
-
 //login information
 //if the user is logged in, redirect to "/". if not, render the login.handlebars page
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+    res.render('login');
+});
+
+module.exports = router;
