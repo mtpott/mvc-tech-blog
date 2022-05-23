@@ -1,0 +1,29 @@
+<section>
+    <h2>create a new post</h2>
+
+    <form class="new-post-form">
+        <div>
+            <label for="title">title</label>
+            <input type="text" id="title" name="post-title" />
+        </div>
+        <div>
+            <label for="url">link</label>
+            <input type="text" id="url" name="post-url" />
+        </div>
+        <button type="submit" class="btn">create post</button>
+    </form>
+</section>
+
+{{#if posts.length}}
+<section>
+    <h2>your posts</h2>
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+<script src="/javascript/create-post.js"></script>
