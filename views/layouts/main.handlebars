@@ -5,18 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>mvc tech blog</title>
+        <link rel="stylesheet" href="/css/style.css">
     </head>
 
     <body>
         <div>
             <header>
-                <h1>
-                    <a href="/">mvc tech blog</a>
-                </h1>
+                <h2>
+                    mvc tech blog
+                </h2>
                 <nav>
                     {{#if loggedIn}}
+                    <a href="/">home</a>
                     <a href="/dashboard">dashboard</a>
-                    <button id="logout">logout</button>
+                    <button id="logout" class="btn-no-style">logout</button>
                     {{else}}
                     <a href="/login">login</a>
                     {{/if}}

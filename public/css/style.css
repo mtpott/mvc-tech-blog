@@ -1,0 +1,29 @@
+* {
+    background-color: #BCC4DB;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    color: #2C4251;
+    font-size: 24px;
+}
+
+.btn {
+    padding: 2px;
+    text-decoration: none;
+}
+
+.post-list {
+    margin: 5px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #CB904D;
+}
+
