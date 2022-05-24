@@ -3,16 +3,19 @@
 
     <form class="new-post-form">
         <div>
-            <label for="title">title</label>
-            <input type="text" id="title" name="post-title" />
+            <label for="post-title">title</label>
+            <input type="text" id="post-title" name="post-title" />
         </div>
+        <br>
         <div>
-            <label for="url">link</label>
-            <input type="text" id="url" name="post-url" />
+            <label for="post-url">link</label>
+            <input type="text" id="post-url" name="post-url" />
         </div>
         <button type="submit" class="btn">create post</button>
     </form>
 </section>
+
+<br>
 
 {{#if posts.length}}
 <section>

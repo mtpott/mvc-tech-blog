@@ -11,4 +11,8 @@
 </form>
 {{/if}}
 
-{{> comments post.comments}}
+{{> comment post.comments}}
+
+{{#if loggedIn}}
+<script src="./public/javascript/comment.js"></script>
+{{/if}}

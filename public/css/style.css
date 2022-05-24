@@ -9,21 +9,31 @@ h2 {
 }
 
 .btn {
-    padding: 2px;
-    text-decoration: none;
+    padding: 1px;
+}
+
+.post {
+    margin-left: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .post-list {
     margin: 5px;
-    padding: 5px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #2C4251;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
 }
 
 a:hover {
     color: #CB904D;
 }
 
+nav {
+    font-size: 16px;
+}
