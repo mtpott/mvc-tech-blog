@@ -5,7 +5,7 @@ router.get('/', (req, res) => {
     Comment.findAll({
         attributes: [
             'id',
-            'comment_url',
+            'comment_text',
             'created_at'
         ],
         include: [
