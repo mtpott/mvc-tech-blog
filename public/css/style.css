@@ -9,6 +9,7 @@ h2 {
 }
 
 .login {
+    display: inline-block;
     padding-left: 15px;
     padding-bottom: 10px;
     font-size: 14px;
@@ -28,9 +29,6 @@ h2 {
     padding-top: 2px;
 }
 
-#email-signup {
-    padding-top: 5px;
-}
 
 #password-length {
     font-style: italic;
@@ -41,24 +39,20 @@ h2 {
     padding-left: 1px;
 }
 
-.btn:hover {
-    color: #CB904D;
-}
-
 .title {
     padding-left: 5px;
     padding-bottom: 5px;
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
 }
-
+/* 
 .post-list {
     padding: 5px;
 }
 
 .post {
     display: flex;
-}
+} */
 
 a {
     text-decoration: none;
@@ -82,6 +76,11 @@ nav {
     font-size: 12px;
 }
 
+ul, li {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
 .comment {
     padding: 12px;
     font-size: 14px;
@@ -89,4 +88,8 @@ nav {
 
 .comment-text {
     padding-left: 7px;
+}
+
+footer {
+    font-size: 12px;
 }

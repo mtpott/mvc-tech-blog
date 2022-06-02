@@ -20,13 +20,13 @@
 {{#if posts.length}}
 <section>
     <h2>your posts</h2>
-    <ol>
+    <ul>
         {{#each posts as |post|}}
         <li>
             {{> post-info post}}
         </li>
         {{/each}}
-    </ol>
+    </ul>
 </section>
 {{/if}}
 <script src="/javascript/create-post.js"></script>
