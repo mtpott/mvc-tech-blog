@@ -8,8 +8,36 @@ h2 {
     font-size: 24px;
 }
 
+.login {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.signup {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#email-login {
+    padding-top: 5px;
+}
+
+#password-login {
+    padding-top: 2px;
+}
+
+#email-signup {
+    padding-top: 5px;
+}
+
+#password-length {
+    font-style: italic;
+    font-size: 12px;
+}
+
 .btn {
-    /* padding: 1px; */
     padding-left: 1px;
 }
 
@@ -26,6 +54,10 @@ h2 {
 
 .post-list {
     padding: 5px;
+}
+
+.post {
+    display: flex;
 }
 
 a {
