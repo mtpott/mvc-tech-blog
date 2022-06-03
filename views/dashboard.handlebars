@@ -1,5 +1,5 @@
-<section>
-    <h3>create a new post</h3>
+<section class="p-3">
+    <h3 class="pb-2">create a new post</h3>
 
     <form class="new-post-form">
         <div>
@@ -11,22 +11,22 @@
             <label for="post-url">link</label>
             <input type="text" id="post-url" name="post-url" />
         </div>
-        <button type="submit" class="btn">create post</button>
+        <button type="submit" class="btn pt-2">create post</button>
     </form>
 </section>
 
 <br>
 
 {{#if posts.length}}
-<section>
-    <h2>your posts</h2>
-    <ul>
-        {{#each posts as |post|}}
+<section class="pl-3">
+    <h2 class="p-3">your posts</h2>
+    {{#each posts as |post|}}
+    <ul class="post pl-1">
         <li>
             {{> post-info post}}
         </li>
-        {{/each}}
     </ul>
+    {{/each}}
 </section>
 {{/if}}
 <script src="/javascript/create-post.js"></script>

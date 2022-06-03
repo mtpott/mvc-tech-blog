@@ -5,7 +5,13 @@
 
 h2 {
     color: #2C4251;
-    font-size: 24px;
+    font-size: 36px;
+}
+
+header {
+    border: black solid 1px;
+    padding: 3px;
+    text-align: center;
 }
 
 .login {
@@ -35,8 +41,12 @@ h2 {
     font-size: 12px;
 }
 
-.btn {
+/* .btn {
     padding-left: 1px;
+} */
+
+.btn:hover {
+    color: #CB904D;
 }
 
 .title {
@@ -45,21 +55,12 @@ h2 {
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
 }
-/* 
-.post-list {
-    padding: 5px;
-}
-
-.post {
-    display: flex;
-} */
 
 a {
     text-decoration: none;
     color: #2C4251;
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
-    padding: 5px;
 }
 
 a:hover {
@@ -74,11 +75,13 @@ nav {
 
 .meta {
     font-size: 12px;
+    padding-left: 15px;
 }
 
 ul, li {
     list-style: none;
     margin-bottom: 0px;
+    
 }
 
 .comment {
