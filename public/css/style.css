@@ -9,9 +9,9 @@ h2 {
 }
 
 header {
-    border: black solid 1px;
     padding: 3px;
     text-align: center;
+    border-bottom: solid 3px #35524A;
 }
 
 .login {
@@ -47,6 +47,7 @@ header {
 
 .btn:hover {
     color: #CB904D;
+    opacity: 0.5;
 }
 
 .title {
@@ -81,16 +82,33 @@ nav {
 ul, li {
     list-style: none;
     margin-bottom: 0px;
-    
+}
+
+.post-date {
+    font-size: 12px;
+}
+
+.new-post-form {
+    align-items: center;
+}
+
+#post-content {
+    height: 200px;
+    width: 1000px;
+}
+
+.post-link {
+    font-size: 24px;
 }
 
 .comment {
     padding: 12px;
     font-size: 14px;
+    border-bottom: 1px solid #B5B8BD;
 }
 
 .comment-text {
-    padding-left: 7px;
+    padding-left: 10px;
 }
 
 footer {

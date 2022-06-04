@@ -3,13 +3,13 @@
 
     <form class="new-post-form">
         <div>
-            <label for="post-title">title</label>
+            <label for="post-title">title:</label>
             <input type="text" id="post-title" name="post-title" />
         </div>
         <br>
         <div>
-            <label for="post-url">link</label>
-            <input type="text" id="post-url" name="post-url" />
+            <label for="post-url">content:</label>
+            <textarea type="text" id="post-content" name="post-content"></textarea>
         </div>
         <button type="submit" class="btn pt-2">create post</button>
     </form>
@@ -24,6 +24,7 @@
     <ul class="post pl-1">
         <li>
             {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-post-link">edit post</a>
         </li>
     </ul>
     {{/each}}
