@@ -6,12 +6,14 @@
 h2 {
     color: #2C4251;
     font-size: 36px;
+    background-color: #9097AB;
 }
 
 header {
     padding: 3px;
     text-align: center;
     border-bottom: solid 3px #35524A;
+    background-color: #9097AB;
 }
 
 .login {
@@ -52,7 +54,6 @@ header {
 
 .title {
     padding-left: 5px;
-    padding-bottom: 5px;
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
 }
@@ -72,6 +73,11 @@ a:hover {
 nav {
     padding-left: 10px;
     font-size: 16px;
+    background-color: #9097AB;
+}
+
+nav a {
+    background-color: #9097AB;
 }
 
 .meta {
@@ -89,16 +95,69 @@ ul, li {
 }
 
 .new-post-form {
+    padding-left: 30px;
+    justify-content: center;
     align-items: center;
 }
 
+.your-dash {
+    padding-left: 30px;
+}
+
+.post {
+    padding-left: 30px;
+}
+
 #post-content {
-    height: 200px;
-    width: 1000px;
+    height: 150px;
+    width: 700px;
 }
 
 .post-link {
     font-size: 24px;
+}
+
+.post-author {
+    font-size: 12px;
+    color: #35524A;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.post-content {
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.comment-length {
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+.back-dash {
+    margin-left: 5px;
+}
+
+.edit-post {
+    margin-left: 20px;
+}
+
+.edit-post-link {
+    font-size: 12px;
+}
+
+.edit-form {
+    margin-left: 30px;
+}
+
+.edit-title {
+    margin-bottom: 10px;
+}
+
+.edit-content {
+    height: 150px;
+    width: 700px;
+    margin-bottom: 10px;
 }
 
 .comment {

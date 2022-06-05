@@ -1,13 +1,13 @@
 <article>
-    <a href="/dashboard">back to dashboard</a>
-    <h2>edit post</h2>
+    <a class="back-dash" href="/dashboard">back to dashboard</a>
+    <h3 class="edit-post">edit post</h3>
 
     <form class="edit-form">
         <div class="edit-title">
             <input name="title" type="text" value="{{post.title}}"/>
         </div>
         <div class="edit-content">
-            <textarea name="edit-content" type="text" value="{{post.post_content}}"></textarea>
+            <textarea name="edit-content" class="edit-content" type="text">{{post.post_content}}</textarea>
         </div>
 
         <button type="submit">save post</button>
