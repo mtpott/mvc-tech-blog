@@ -15,6 +15,7 @@ router.get('/', auth, (req, res) => {
             'title',
             'created_at'
         ],
+        order: [['created_at', 'DESC']],
         include: [
             {
                 model: Comment,
@@ -41,7 +42,7 @@ router.get('/', auth, (req, res) => {
 });
 
 //get post by id (to edit; pass along to edit-post.handlebars)
-router.get('/edit/:id', (req, res) => {
+router.get('/edit/:id', auth, (req, res) => {
     Post.findByPk(req.params.id, {
         attributes: [
             'id',
