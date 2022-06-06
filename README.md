@@ -14,11 +14,11 @@ This is a CMS-style blog site designed for developers to post and discuss all th
 ## Installation
 ### Instructions for Project Installation:
 
-Be sure to run 'npm i' in order to install all packages to ensure website loads efficiently.
+Be sure to run 'npm i' in order to install all packages to ensure website loads efficiently. I have included some example posts, but make an account and sign in in order to add your own posts and comment on others!
 
 ## Links
 
-https://protected-thicket-04553.herokuapp.com/
+Deployed site: https://protected-thicket-04553.herokuapp.com/
   
 ## Technologies
 ### Built With:
